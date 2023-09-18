@@ -1,16 +1,16 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
-import "./App.css";
-import Footer from "./common/Footer";
-import Navbar from "./common/Navbar";
-import MainDisplayST from "./MainDisplayPage/MainDisplayST";
+import { useEffect, useState } from 'react';
+import axios from 'axios';
+import './App.css';
+import Footer from './common/Footer';
+import Navbar from './common/Navbar';
+import Shop from './pages/Shop';
 
 function App() {
-  const [img, setImg] = useState("");
+  const [img, setImg] = useState('');
 
   useEffect(() => {
     // Define the URL of your backend API
-    const apiUrl = "http://localhost:4000/products"; // Replace with your actual API endpoint
+    const apiUrl = 'http://localhost:4000/products'; // Replace with your actual API endpoint
 
     // Make a GET request to retrieve products with Base64-encoded images
     axios
@@ -25,18 +25,17 @@ function App() {
       })
       .catch((error) => {
         // Handle any errors here
-        console.error("Error fetching products:", error);
+        console.error('Error fetching products:', error);
       });
   }, []);
 
   return (
-    <div className="App">
-       <Navbar />
-      <MainDisplayST />
+    <div className='App'>
+      <Navbar />
+      <Shop />
       <Footer />
     </div>
   );
 }
 
 export default App;
-
