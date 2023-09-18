@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-
+import Footer from "./common/Footer";
+import Navbar from "./common/Navbar";
+import MainDisplayST from "./MainDisplayPage/MainDisplayST";
 
 function App() {
   const [img, setImg] = useState("");
@@ -15,8 +17,11 @@ function App() {
       .get(apiUrl)
       .then((response) => {
         // Handle the successful response here
-        const fetchedProducts = response.data.products[0].image;
-        setImg(fetchedProducts);
+        const fetchedProducts = response.data.products;
+        if (fetchedProducts.length > 0) {
+          setImg(fetchedProducts[0].image);
+          console.log(typeof fetchedProducts[0].image);
+        }
       })
       .catch((error) => {
         // Handle any errors here
@@ -24,26 +29,14 @@ function App() {
       });
   }, []);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await axios.get("http://localhost:4000/products");
-      console.log(data);
-      setImg(data.data.products[0].image);
-      console.log(typeof data.data.products[0].image);
-    };
-    fetchData();
-  }, []);
-
   return (
     <div className="App">
-      
-      <img
-        src={`data:image/webp;base64,${img}`}
-        className="App-logo"
-        alt="logo"
-      />
+       <Navbar />
+      <MainDisplayST />
+      <Footer />
     </div>
   );
 }
 
 export default App;
+
