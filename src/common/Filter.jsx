@@ -93,7 +93,9 @@ export function Filter() {
               onChange={(e) => setMinSize(e.target.value)}
             >
               {sizeOptions.map((size) => (
-                <option key={size} value={size}>{size}inches</option>
+                <option key={size} value={size}>
+                  {size}inches
+                </option>
               ))}
             </select>
             <span className='mx-2'>━━━</span>
@@ -104,74 +106,80 @@ export function Filter() {
               onChange={(e) => setMaxSize(e.target.value)}
             >
               {sizeOptions.map((size) => (
-                <option key={size} value={size}>{size}inches</option>
+                <option key={size} value={size}>
+                  {size}inches
+                </option>
               ))}
             </select>
           </div>
         </div>
       </div>
       {/* Second row */}
-      {expandFilter && <div className='flex flex-row mb-4'>
-        <div className='flex flex-col mr-8'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
-            Total storage
-          </label>
-          <select
-            className='bg-neutral-200 rounded-md py-1 w-36'
-            name='totalStorage'
-          >
-            <option value="Select">Select</option>
-          </select>
+      {expandFilter && (
+        <div className='flex flex-row mb-4'>
+          <div className='flex flex-col mr-8'>
+            <label className='text-sm font-medium text-gray-700 mb-2'>
+              Total storage
+            </label>
+            <select
+              className='bg-neutral-200 rounded-md py-1 w-36'
+              name='totalStorage'
+            >
+              <option value='Select'>Select</option>
+            </select>
+          </div>
+          <div className='flex flex-col mr-8'>
+            <label className='text-sm font-medium text-gray-700 mb-2'>
+              RAM storage
+            </label>
+            <select
+              className='bg-neutral-200 rounded-md py-1 w-36'
+              name='ramStorage'
+            >
+              <option value='Select'>Select</option>
+            </select>
+          </div>
+          <div className='flex flex-col mr-8'>
+            <label className='text-sm font-medium text-gray-700 mb-2'>
+              CPU
+            </label>
+            <select className='bg-neutral-200 rounded-md py-1 w-36' name='cpu'>
+              <option value='Select'>Select</option>
+            </select>
+          </div>
+          <div className='flex flex-col mr-8'>
+            <label className='text-sm font-medium text-gray-700 mb-2'>
+              Operating system
+            </label>
+            <select
+              className='bg-neutral-200 rounded-md py-1 w-36'
+              name='operatingSystem'
+            >
+              <option value='Select'>Select</option>
+            </select>
+          </div>
+          <div className='flex flex-col mr-8'>
+            <label className='text-sm font-medium text-gray-700 mb-2'>
+              Processor type
+            </label>
+            <select
+              className='bg-neutral-200 rounded-md py-1 w-36'
+              name='processor'
+            >
+              <option value='Select'>Select</option>
+            </select>
+          </div>
         </div>
-        <div className='flex flex-col mr-8'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
-            RAM storage
-          </label>
-          <select
-            className='bg-neutral-200 rounded-md py-1 w-36'
-            name='ramStorage'
-          >
-            <option value="Select">Select</option>
-          </select>
-        </div>
-        <div className='flex flex-col mr-8'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
-            CPU
-          </label>
-          <select
-            className='bg-neutral-200 rounded-md py-1 w-36'
-            name='cpu'
-          >
-            <option value="Select">Select</option>
-          </select>
-        </div>
-        <div className='flex flex-col mr-8'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
-            Operating system
-          </label>
-          <select
-            className='bg-neutral-200 rounded-md py-1 w-36'
-            name='operatingSystem'
-          >
-            <option value="Select">Select</option>
-          </select>
-        </div>
-        <div className='flex flex-col mr-8'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
-            Processor type
-          </label>
-          <select
-            className='bg-neutral-200 rounded-md py-1 w-36'
-            name='processor'
-          >
-            <option value="Select">Select</option>
-          </select>
-        </div>
-      </div>}
+      )}
       {/* Advanced filter */}
       <div className='flex justify-end'>
-        <button type='button' onClick={() => setExpandFilter((prevVal) => !prevVal)}>
-          <span className='text-sky-700 underline'>{!expandFilter ? 'Advanced Search >' : 'Reset Filter >'}</span>
+        <button
+          type='button'
+          onClick={() => setExpandFilter((prevVal) => !prevVal)}
+        >
+          <span className='text-sky-700 underline'>
+            {!expandFilter ? 'Advanced Search >' : 'Reset Filter >'}
+          </span>
         </button>
       </div>
     </form>
