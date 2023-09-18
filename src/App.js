@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
 
+
 function App() {
   const [img, setImg] = useState("");
 
@@ -23,18 +24,19 @@ function App() {
       });
   }, []);
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await axios.get("http://localhost:4000/products");
-  //     console.log(data);
-  //     setImg(data.data.products[0].image);
-  //     console.log(typeof data.data.products[0].image);
-  //   };
-  //   fetchData();
-  // }, []);
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await axios.get("http://localhost:4000/products");
+      console.log(data);
+      setImg(data.data.products[0].image);
+      console.log(typeof data.data.products[0].image);
+    };
+    fetchData();
+  }, []);
 
   return (
     <div className="App">
+      
       <img
         src={`data:image/webp;base64,${img}`}
         className="App-logo"
