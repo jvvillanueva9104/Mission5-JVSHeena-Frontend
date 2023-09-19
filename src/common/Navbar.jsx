@@ -166,7 +166,7 @@ const Navbar = () => {
           </a>
           <a
             className="flex justify-center items-center gap-1 text-[#fefefe] font-medium text-[14px] leading-normal"
-            href=""
+            href="/"
           >
             <img className="w-[16px] h-[13px]" src="storeicon.png" alt="" />
             <span>Stores</span>
