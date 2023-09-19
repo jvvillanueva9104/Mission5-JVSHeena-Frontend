@@ -1,8 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import "./App.css";
-import Footer from "./common/Footer";
-import Navbar from "./common/Navbar";
+import ProductDescription from "./pages/ProductDescription/ProductDescription";
 
 function App() {
   const [img, setImg] = useState("");
@@ -27,7 +26,7 @@ function App() {
 
   return (
     <div className="App">
-      <Navbar />
+      <ProductDescription />
     </div>
   );
 }
