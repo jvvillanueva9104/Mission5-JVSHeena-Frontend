@@ -29,10 +29,53 @@ function App() {
       });
   }, []);
 
+  const data = [
+    {
+      name: 'image1',
+      price: 9420,
+      url: 'google.com',
+    },
+    {
+      name: 'image2',
+      price: 9420,
+      url: 'google.com',
+    },
+    {
+      name: 'image3',
+      price: 9420,
+      url: 'google.com',
+    },
+    {
+      name: 'image4',
+      price: 9420,
+      url: 'google.com',
+    },
+    {
+      name: 'image5',
+      price: 9420,
+      url: 'google.com',
+    },
+    {
+      name: 'image6',
+      price: 9420,
+      url: 'google.com',
+    },
+    {
+      name: 'image7',
+      price: 9420,
+      url: 'google.com',
+    },
+    {
+      name: 'image8',
+      price: 9420,
+      url: 'google.com',
+    },
+  ];
+
   return (
     <div className='App'>
       <Navbar />
-      <Shop />
+      <Shop data={data} />
       <Footer />
     </div>
   );

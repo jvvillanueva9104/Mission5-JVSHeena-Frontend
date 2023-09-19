@@ -23,14 +23,23 @@ export function Filter() {
   const [expandFilter, setExpandFilter] = useState(false);
 
   return (
-    <form className='border border-solid rounded-md border-orange-600 flex flex-col mx-4 px-12 py-4'>
+    <form
+  className='border border-solid rounded-md border-orange-600 flex flex-col mx-4 px-12 py-4'
+  style={{
+    width: '1218px',
+    height: '169px',
+    top: '250px',
+    left: '111px',
+    borderRadius: '5px',
+  }}
+>
       {/* First row */}
       <div className='flex flex-row mb-4'>
         {/* Price */}
         <div className='flex flex-col flex-grow flex-shrink'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
-            Price
-          </label>
+        <label className='text-sm font-medium text-gray-700 mb-2 roboto-font'>
+  Price
+</label>
           <input
             className='flex flex-grow flex-shrink'
             type='range'
@@ -43,7 +52,7 @@ export function Filter() {
         </div>
         {/* Brand */}
         <div className='flex flex-col mx-10'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
+          <label className='text-sm font-medium text-gray-700 mb-2 roboto-font'>
             Brand
           </label>
           <button
@@ -82,7 +91,7 @@ export function Filter() {
         </div>
         {/* Screen size */}
         <div className='flex flex-col'>
-          <label className='text-sm font-medium text-gray-700 mb-2'>
+          <label className='text-sm font-medium text-gray-700 mb-2 roboto-font'>
             Screen size
           </label>
           <div className='flex flex-row'>
