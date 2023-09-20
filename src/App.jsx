@@ -7,7 +7,7 @@ import ProductDescription from "./pages/ProductDescription/ProductDescription";
 function App() {
   return (
     <div className="App">
-      <ProductDescription />
+      <Shop />
     </div>
   );
 }

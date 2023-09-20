@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <div className="w-full h-[567.40px] bg-zinc-800">
-      <div className="flex justify-center gap-[12.8rem] pt-[4rem] mx-[3.75rem]">
+      <div className="flex justify-center gap-[12.8rem] pt-[4rem] mx-[3.75rem] md:gap-[5rem] 2xl:gap-[12.8rem]">
         <div className="flex flex-col">
           <h4 className="mb-[2rem] text-[#999999]">Shop by DEPARTMENT</h4>
           <div className="flex gap-[5rem]">
@@ -63,7 +63,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-[12.8rem]">
-          <div className="translate-x-14">
+          <div className="translate-x-14 md:translate-x-[10rem]">
             <h4 className="mb-[2rem] text-[#999999] w-[140px]">Company Info</h4>
             <div className="flex flex-col">
               <ul className="flex flex-col gap-2">
@@ -158,7 +158,7 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col translate-x-10">
+          <div className="flex flex-col translate-x-10 md:translate-x-16">
             <h4 className="mb-[2rem] text-[#999999] w-[140px]">
               Services & Support
             </h4>
@@ -321,7 +321,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="md:translate-x-3 ">
           <h4 className="mb-[2rem] text-[#999999]">Become a PB Insider</h4>
           <div className="flex flex-col w-[220px] h-[152px] bg-[#464646] justify-center rounded-sm">
             <div className="flex justify-items-center gap-2 px-3 py-2">
