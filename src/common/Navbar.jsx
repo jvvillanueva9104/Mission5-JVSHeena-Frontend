@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-[0.38rem] h-[34px] w-[104px] bg-[#0e4360] rounded-[2px] p-[0.35rem] mr-[0.75rem]">
           <img className="h-[20px] w-[20px]" src="hearticonn.png" alt="" />
-          <span className="text-[#fefefe] font-medium md:text-[10px] lg:text-[14px]">
+          <span className="text-[#fefefe] font-medium xl:text-[10px] 2xl:text-[14px]">
             Wish List
           </span>
         </div>
