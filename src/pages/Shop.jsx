@@ -49,13 +49,13 @@ export default function Shop() {
             <div key={item._id} className='border rounded-md flex flex-col p-4'>
               <img src={base64 + item.image} alt={item.model} />
               <span className='text-md mt-4'>{item.model}</span>
-              <span className='text-2xl font-medium text-orange-600'>
+              <span className='text-2xl font-medium text-[#E1843C]'>
                 ${item.price}
               </span>
               <div className='flex flex-row mt-4'>
                 <button
                   type='button'
-                  className='border-2 rounded-md border-orange-600 text-orange-600 w-full mr-2 px-4 py-1'
+                  className='border-2 rounded-md border-[#E1843C] text-[#E1843C] w-full mr-2 px-4 py-1'
                 >
                   View details
                 </button>
