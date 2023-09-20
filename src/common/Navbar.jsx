@@ -30,11 +30,13 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="flex items-center w-full h-[94px] bg-[#214f74] px-[3.75rem]">
-        <img
-          className="w-[180px] h-[45px] mr-[2.62rem]"
-          src="pbtechlogo.png"
-          alt=""
-        />
+        <a href="/">
+          <img
+            className="w-[180px] h-[45px] mr-[2.62rem]"
+            src="pbtechlogo.png"
+            alt=""
+          />
+        </a>
         <input
           className="w-[844px] h-[34px] p-2 rounded-l-sm"
           type="search"
@@ -43,7 +45,7 @@ const Navbar = () => {
           id=""
         />
         <div
-          className={`absolute flex justify-center items-center left-[59rem] md:left-[42rem]`}
+          className={`absolute flex justify-center items-center 2xl:left-[58rem] md:left-[42rem]`}
         >
           <span className="flex-1">in {option}</span>
           <img

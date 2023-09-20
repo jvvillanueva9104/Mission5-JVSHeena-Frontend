@@ -4,6 +4,7 @@ import Navbar from "../common/Navbar";
 import Footer from "../common/Footer";
 import { useState, useEffect } from "react";
 import axios from "axios";
+import { Link } from "react-router-dom";
 
 export default function Shop() {
   const [products, setProducts] = useState([]);
@@ -55,12 +56,13 @@ export default function Shop() {
                 ${item.price}
               </span>
               <div className="flex flex-row mt-4">
-                <button
+                <Link
+                  to="/productDescription"
                   type="button"
-                  className="border-2 rounded-md border-orange-600 text-orange-600 w-full mr-2 px-4 py-1"
+                  className="flex items-center justify-center border-2 rounded-md border-orange-600 text-orange-600 w-full mr-2 px-4 py-1"
                 >
                   View details
-                </button>
+                </Link>
                 <button
                   type="button"
                   className="rounded-md bg-[#E1843C] text-white w-full px-4 py-1"
