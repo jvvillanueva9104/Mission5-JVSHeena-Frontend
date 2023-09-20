@@ -1,13 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto&display=swap');
+
 .container {
      display: flex; 
     align-items: center; 
- margin-left: -50px;
+ margin-left: -15px;
  margin-top: 20px;
   }
   
   .slider {
     position: relative;
-    width: 200px;
+    width: 210px;
   }
   
   .slider__track,
@@ -37,16 +39,17 @@
   .slider__left-value,
   .slider__right-value {
     color: #000000;
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 20px;
+    font-family: 'Roboto', sans-serif;
   }
   
   .slider__left-value {
-    left: 6px;
+    left: 2px;
   }
   
   .slider__right-value {
-    right: -4px;
+    right: -20px;
   }
   
   /* Removing the default appearance */
