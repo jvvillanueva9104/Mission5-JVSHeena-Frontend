@@ -17,7 +17,7 @@ const Navbar = () => {
 
   return (
     <div>
-      <div className="flex items-center w-full h-[34px] bg-[#021724] px-[3.75rem]">
+      <div className="flex items-center max-w-full h-[34px] bg-[#021724] px-[3.75rem] md:px-[4.2rem]">
         <ul className="flex gap-10">
           <li className="list-none text-[#fefefe]">PB Tech</li>
           <li className="list-none text-[#fefefe]">Hardware</li>
@@ -43,7 +43,7 @@ const Navbar = () => {
           id=""
         />
         <div
-          className={`absolute flex justify-center items-center left-[59rem]`}
+          className={`absolute flex justify-center items-center left-[59rem] md:left-[45rem]`}
         >
           <span className="flex-1">in {option}</span>
           <img
@@ -81,15 +81,17 @@ const Navbar = () => {
             alt=""
           />
         </div>
-        <div className="flex items-center w-[214px] h-[34px] bg-[#0e4360] rounded-[2px] p-1 gap-1 mr-[0.62rem]">
+        <div className="flex justify-center items-center w-[214px] h-[34px] bg-[#0e4360] rounded-[2px] p-1 gap-1 mr-[0.62rem]">
           <img className="h-[20px] w-[18px]" src="userprofilepic.png" alt="" />
-          <span className="text-[#fefefe]">
+          <span className="text-[#fefefe] xl:text-[10px] 2xl:text-[14px]">
             Sign in <span className="text-[#1278a5]">or</span> Create Account
           </span>
         </div>
         <div className="flex items-center gap-[0.38rem] h-[34px] w-[104px] bg-[#0e4360] rounded-[2px] p-[0.35rem] mr-[0.75rem]">
           <img className="h-[20px] w-[20px]" src="hearticonn.png" alt="" />
-          <span className="text-[#fefefe] font-medium">Wish List</span>
+          <span className="text-[#fefefe] font-medium md:text-[10px]">
+            Wish List
+          </span>
         </div>
         <div className="flex items-center justify-evenly w-[88px] h-[34px] bg-[#0e4360] rounded-[2px]">
           <img className="w-[24px] h-[20px]" src="shoppingcart.png" alt="" />
@@ -107,7 +109,7 @@ const Navbar = () => {
         <span className="text-[18px] font-medium text-[#fefefe] mr-[5.5rem]">
           Department
         </span>
-        <div className="flex gap-[2.06rem] mr-[57rem] justify-center">
+        <div className="flex gap-[2.06rem] mr-[57rem] md:mr-[37rem] justify-center">
           <a
             className="text-[#fefefe] font-medium text-[14px] leading-[normal]"
             href="/"
