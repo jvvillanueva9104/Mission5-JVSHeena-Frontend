@@ -43,7 +43,7 @@ const Navbar = () => {
           id=""
         />
         <div
-          className={`absolute flex justify-center items-center left-[59rem] md:left-[45rem]`}
+          className={`absolute flex justify-center items-center left-[59rem] md:left-[42rem]`}
         >
           <span className="flex-1">in {option}</span>
           <img
@@ -89,7 +89,7 @@ const Navbar = () => {
         </div>
         <div className="flex items-center gap-[0.38rem] h-[34px] w-[104px] bg-[#0e4360] rounded-[2px] p-[0.35rem] mr-[0.75rem]">
           <img className="h-[20px] w-[20px]" src="hearticonn.png" alt="" />
-          <span className="text-[#fefefe] font-medium md:text-[10px]">
+          <span className="text-[#fefefe] font-medium md:text-[10px] lg:text-[14px]">
             Wish List
           </span>
         </div>
@@ -109,7 +109,7 @@ const Navbar = () => {
         <span className="text-[18px] font-medium text-[#fefefe] mr-[5.5rem]">
           Department
         </span>
-        <div className="flex gap-[2.06rem] mr-[57rem] md:mr-[37rem] justify-center">
+        <div className="flex gap-[2.06rem] 2xl:mr-[57rem] md:mr-[32rem] justify-center">
           <a
             className="text-[#fefefe] font-medium text-[14px] leading-[normal]"
             href="/"
