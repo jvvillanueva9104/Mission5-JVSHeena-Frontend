@@ -43,11 +43,11 @@ const Navbar = () => {
           id=""
         />
         <div
-          className={`absolute flex justify-center items-center left-[40rem]`}
+          className={`absolute flex justify-center items-center left-[59rem]`}
         >
           <span className="flex-1">in {option}</span>
           <img
-            className="w-[2rem] h-[2rem] fixed left-[48rem] top-[4.2rem] cursor-pointer"
+            className="w-[2rem] h-[2rem] left-[67rem] top-[4.2rem] cursor-pointer"
             src="dropdownarrow.png"
             alt=""
             onClick={toggleDropdown}
@@ -98,15 +98,80 @@ const Navbar = () => {
           </div>
         </div>
       </div>
-      <div className="flex items-center w-full h-[44px] bg-[#214f74] px-[3.75rem]">
+      <div className="flex justify-center items-center w-full h-[44px] bg-[#214f74] px-[3.75rem]">
         <img
           className="w-[20px] h-[17px] mr-[0.94rem]"
           src="burgermenu.png"
           alt=""
         />
-        <span className="text-[18px] font-medium text-[#fefefe]">
+        <span className="text-[18px] font-medium text-[#fefefe] mr-[5.5rem]">
           Department
         </span>
+        <div className="flex gap-[2.06rem] mr-[57rem] justify-center">
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-[normal]"
+            href="/"
+          >
+            Brand
+          </a>
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-[normal]"
+            href="/"
+          >
+            Service
+          </a>
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-[normal]"
+            href="/"
+          >
+            Promos
+          </a>
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-[normal]"
+            href="/"
+          >
+            Deals
+          </a>
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-[normal]"
+            href="/"
+          >
+            New
+          </a>
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-normal"
+            href="/"
+          >
+            Tax Free
+          </a>
+        </div>
+        <div className="flex gap-[0.62rem]">
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-normal"
+            href="/"
+          >
+            Orders
+          </a>
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-normal"
+            href="/"
+          >
+            Returns
+          </a>
+          <a
+            className="text-[#fefefe] font-medium text-[14px] leading-normal"
+            href="/"
+          >
+            Help
+          </a>
+          <a
+            className="flex justify-center items-center gap-1 text-[#fefefe] font-medium text-[14px] leading-normal"
+            href="/"
+          >
+            <img className="w-[16px] h-[13px]" src="storeicon.png" alt="" />
+            <span>Stores</span>
+          </a>
+        </div>
       </div>
     </div>
   );
