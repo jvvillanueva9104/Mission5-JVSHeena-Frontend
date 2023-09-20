@@ -2,8 +2,8 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="relative w-full md h-[567.40px] bg-zinc-800">
-      <div className="flex justify-center gap-[12.8rem] pt-[4rem]">
+    <div className="w-full h-[567.40px] bg-zinc-800">
+      <div className="flex justify-center gap-[12.8rem] pt-[4rem] mx-[3.75rem] md:gap-[5rem] 2xl:gap-[12.8rem]">
         <div className="flex flex-col">
           <h4 className="mb-[2rem] text-[#999999]">Shop by DEPARTMENT</h4>
           <div className="flex gap-[5rem]">
@@ -63,8 +63,8 @@ const Footer = () => {
           </div>
         </div>
         <div className="flex gap-[12.8rem]">
-          <div className="translate-x-14">
-            <h4 className="mb-[2rem] text-[#999999]">Company Info</h4>
+          <div className="translate-x-14 md:translate-x-[10rem]">
+            <h4 className="mb-[2rem] text-[#999999] w-[140px]">Company Info</h4>
             <div className="flex flex-col">
               <ul className="flex flex-col gap-2">
                 <li className="flex items-center gap-1 list-none text-[#fefefe] font-medium text-[12px]">
@@ -158,8 +158,10 @@ const Footer = () => {
               </ul>
             </div>
           </div>
-          <div className="flex flex-col translate-x-10">
-            <h4 className="mb-[2rem] text-[#999999]">Services & Support</h4>
+          <div className="flex flex-col translate-x-10 md:translate-x-16">
+            <h4 className="mb-[2rem] text-[#999999] w-[140px]">
+              Services & Support
+            </h4>
             <div className="">
               <ul className="flex flex-col gap-2">
                 <li className="flex items-center gap-1 list-none text-[#fefefe] font-medium text-[12px]">
@@ -238,7 +240,9 @@ const Footer = () => {
             </div>
           </div>
           <div className="flex flex-col">
-            <h4 className="mb-[2rem] text-[#999999]">Promotion & Office</h4>
+            <h4 className="mb-[2rem] text-[#999999] w-[140px]">
+              Promotion & Office
+            </h4>
             <div>
               <ul className="flex flex-col gap-2">
                 <li className="flex items-center gap-1 list-none text-[#fefefe] font-medium text-[12px]">
@@ -317,7 +321,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div>
+        <div className="md:translate-x-3 ">
           <h4 className="mb-[2rem] text-[#999999]">Become a PB Insider</h4>
           <div className="flex flex-col w-[220px] h-[152px] bg-[#464646] justify-center rounded-sm">
             <div className="flex justify-items-center gap-2 px-3 py-2">
@@ -335,8 +339,8 @@ const Footer = () => {
         </div>
       </div>
 
-      <div className="mt-16 mb-4 flex justify-between items-center w-full px-[3.75rem]">
-        <div className="flex justify-center items-center gap-[1px]">
+      <div className="mt-16 mb-4 flex justify-between items-center w-full px-[3.75rem] border-t border-[#696969] border-solid ">
+        <div className="flex justify-center items-center gap-[1px] mt-4">
           <img className="w-[34px] h-[17px]" src="visa.png" alt="" />
           <img className="w-[34px] h-[17px]" src="mastercard.png" alt="" />
           <img className="w-[34px] h-[17px]" src="qpay.png" alt="" />
@@ -348,14 +352,14 @@ const Footer = () => {
           <img className="w-[34px] h-[17px]" src="poli.png" alt="" />
         </div>
 
-        <div className="flex justify-center items-center h-[30px] w-[338px] bg-[#444444] translate-x-[-4.5rem] gap-1">
+        <div className="flex justify-center items-center h-[30px] w-[338px] bg-[#444444] translate-x-[-4.5rem] gap-1 mt-4">
           <img className="w-[13px] h-[13px]" src="globe.png" alt="" />
           <p className="font-medium text-[#fefefe] text-[13.2px]">
             Country: New Zealand · Australia · Pacific · Global
           </p>
         </div>
 
-        <div className="flex top-px gap-1">
+        <div className="flex top-px gap-1 mt-4">
           <div className="flex justify-center items-center w-[30px] rounded-sm h-[28px] bg-[#696969]">
             <img className="w-[25px] h-[26px]" src="facebook.png" alt="" />
           </div>

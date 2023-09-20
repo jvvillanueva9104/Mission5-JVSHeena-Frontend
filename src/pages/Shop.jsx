@@ -6,10 +6,6 @@ import { useState, useEffect } from 'react';
 import axios from 'axios';
 
 export default function Shop() {
-  // const [posts, setPosts] = useState([]);
-  // const [loading, setLoading] = useState(false);
-  // const [currentPage, setCurrentPage] = useState(1);
-
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -19,13 +15,13 @@ export default function Shop() {
       .then((response) => {
         setProducts(response.data.products);
         setFilteredProducts(response.data.products);
-        console.log(products);
-        console.log(filteredProducts);
       })
       .catch((error) => {
         console.error('Error fetching products:', error);
       });
   }, []);
+
+  console.log(filteredProducts);
 
   const base64 = 'data:image/jpeg;base64,';
   return (
@@ -36,7 +32,7 @@ export default function Shop() {
         <div className='my-8'>
           {/* Sort by */}
           <div className='flex flex-row items-center'>
-            <label className='text-[#000000] mb-2 roboto-font-14 mr-4 '>
+            <label className='text-[#000000] roboto-font-14 mr-4 '>
               Sort by
             </label>
             <select
