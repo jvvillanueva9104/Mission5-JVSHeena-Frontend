@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const AccessoriesContents = () => {
   return (
-    <div className="flex gap-36 justify-center items-center w-[1758px] h-[614px] border-2 border-solid border-[#f0f0f0]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0, transition: { duration: 0.1 } }}
+      className="flex gap-36 justify-center items-center w-[1758px] h-[614px] border-2 border-solid border-[#f0f0f0]"
+    >
       <div className="w-[301px] h-[448px] flex flex-col border-2 border-solid border-[#f0f0f0] pt-2 rounded-md">
         <img className="w-[301px] h-[293px]" src="iphoneadaptor.png" alt="" />
         <div className="flex flex-col px-10 py-2">
@@ -52,7 +58,7 @@ const AccessoriesContents = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

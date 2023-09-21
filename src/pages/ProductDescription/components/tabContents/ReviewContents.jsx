@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ReviewContents = () => {
   return (
-    <div className="w-[1758px] h-[654px] border-2 border-solid border-[#f0f0f0]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="w-[1758px] h-[654px] border-2 border-solid border-[#f0f0f0]"
+    >
       <div className="">
         <div className="flex">
           <div className="translate-x-10">
@@ -89,7 +95,7 @@ const ReviewContents = () => {
           </p>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

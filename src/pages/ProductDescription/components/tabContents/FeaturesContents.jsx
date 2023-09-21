@@ -1,8 +1,14 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const FeaturesContents = () => {
   return (
-    <div className="flex justify-center items-center w-[1758px] h-[614px] border-2 border-solid border-[#f0f0f0]">
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      exit={{ opacity: 0 }}
+      className="flex justify-center items-center w-[1758px] h-[614px] border-2 border-solid border-[#f0f0f0]"
+    >
       <div className="flex justify-center items-center w-[1145px] h-[411px] border-2 border-solid border-[#f0f0f0] rounded-md px-8">
         <ul className="flex flex-col gap-2">
           <li>
@@ -51,7 +57,7 @@ const FeaturesContents = () => {
           </li>
         </ul>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
