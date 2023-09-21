@@ -12,7 +12,7 @@ const AnimatedHome = () => {
     >
       <Link to="/shop" className="">
         <img className="w-full h-[100vh]" src="blob.png" alt="" />
-        <h1 className="absolute top-[12rem] left-[17rem] text-[#f0f0f0] text-[10rem]">
+        <h1 className="absolute top-[12rem] left-[17rem] text-[#f0f0f0] text-[10rem] xl:left-[13rem] 2xl:left-[17rem] xl:text-[7rem] 2xl:text-[10rem]">
           <TypeWriterEffect
             textStyle={{ fontFamily: "Skranji" }}
             startDelay={100}
@@ -21,13 +21,12 @@ const AnimatedHome = () => {
             typeSpeed={100}
           />
         </h1>
-        <span className="absolute top-[28rem] left-[25rem]">
+        <span className="absolute top-[28rem] left-[25rem] xl:left-[20rem] 2xl:left-[25rem] xl:text-[3rem] 2xl:text-[5rem]">
           <TypeWriterEffect
             textStyle={{
               fontFamily: "Skranji",
               color: "#f0f0f0",
               fontWeight: 500,
-              fontSize: "5em",
             }}
             startDelay={2500}
             cursorColor="#e1833c"
@@ -43,7 +42,7 @@ const AnimatedHome = () => {
           />
         </span>
 
-        <span className="absolute top-[40rem] left-[30rem] text-[#f0f0f0] text-[4rem]">
+        <span className="absolute top-[40rem] left-[30rem] text-[#f0f0f0] text-[4rem] xl:text-[3rem] 2xl:text-[4rem]">
           <TypeWriterEffect
             textStyle={{ fontFamily: "Skranji" }}
             startDelay={23000}
